@@ -1,0 +1,41 @@
+footer {
+  border-top: 1px solid #AAA;
+  margin: 0px 10px;
+  padding: 10px 0px;
+  text-align: center;
+
+  & > a {
+    color: #636b6f;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+  }
+}
+
+.links > a {
+  color: #636b6f;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  padding: 0 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.m-b-md {
+  margin-bottom: 30px;
+}
+
+.position-ref {
+  position: relative;
+}
+
+.title {
+  font-size: 84px;
+}
+
+.top-right {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}
