@@ -15,6 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::post('/register/checkEmail', 'Auth\RegisterController@checkEmail');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
