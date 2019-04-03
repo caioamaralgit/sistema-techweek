@@ -54,6 +54,7 @@
     </nav>
     <main>
         @yield('content')
-    </main>
+    </main>    
+    @yield('dependencies')
 </body>
 </html>
