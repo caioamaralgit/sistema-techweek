@@ -55,5 +55,6 @@
     <main>
         @yield('content')
     </main>
+    @yield('dependencies')
 </body>
 </html>
