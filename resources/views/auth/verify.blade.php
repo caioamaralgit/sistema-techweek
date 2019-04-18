@@ -1,24 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Verificar seu endereço de email') }}</div>
+<section class="auth-page">
+    <h1>Conta Não Verificada</h1>
+    <p>
+        Antes de continuar, por favor acesse o link enviado para seu email para verificar a conta. <br />
+        Se você não recebeu o email, <a href="{{ route('verification.resend') }}">clique aqui para solicitar outro</a>.
+    </p>
 
-                <div class="card-body">
-                    @if (session('resent'))
-                        <div class="alert alert-success" role="alert">
-                            {{ __('A fresh verification link has been sent to your email address.') }}
-                        </div>
-                    @endif
-
-                    {{ __('Before proceeding, please check your email for a verification link.') }}
-                    {{ __('If you did not receive the email') }}, <a href="{{ route('verification.resend') }}">{{ __('click here to request another') }}</a>.
-                </div>
-            </div>
+    @if (session('resent'))
+        <div class="alert alert-success" role="alert">
+            Um novo link de verificação foi enviado para seu email.
         </div>
-    </div>
-</div>
+    @endif
+</section>
+@endsection
+
+@section('dependencies')
+<link href="{{ asset('css/pages/authentication.css') }}" rel="stylesheet" />
 @endsection

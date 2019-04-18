@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<section id="login-page">
+<section class="auth-page">
     <h1>Login</h1>
     <p>
         Acesse sua conta, atividades e certificados.
@@ -62,5 +62,4 @@
 @section('dependencies')
 <link href="{{ asset('css/pages/authentication.css') }}" rel="stylesheet" />
 <script src="{{ asset('js/app.js') }}"></script>
-<script src="{{ asset('js/pages/login.js') }}"></script>
 @endsection
